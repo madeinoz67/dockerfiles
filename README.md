@@ -16,5 +16,7 @@ Every image comes with packages:
 - python2
 - iproute (iproute2 on Ubuntu 18.04)
 - net-tools
+- ca-certificates
+- libcap2-bin
 
 Images in [systemd](systemd) directory come with systemd installed.
