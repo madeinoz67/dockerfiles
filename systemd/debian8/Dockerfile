@@ -8,7 +8,7 @@ RUN echo 'deb http://deb.debian.org/debian jessie-backports main' >> /etc/apt/so
 
 # hadolint ignore=DL3008
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends systemd python sudo bash iproute net-tools \
+    && apt-get install -y --no-install-recommends systemd python sudo bash iproute net-tools ca-certificates  \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
